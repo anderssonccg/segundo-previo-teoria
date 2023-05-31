@@ -100,7 +100,7 @@ public class Automaton {
                 }else if(!st.isEmpty() && c == ']' && st.peek() == '['){
                     st.pop();
                 }else{
-                    this.isValid = false;
+                    if(c != ' ')this.isValid = false;
                 }
             }
         }
